@@ -1,0 +1,71 @@
+---
+---
+
+@import "minima";
+
+.theme-toggle {
+  background: transparent;
+  border: 1px solid #777;
+  color: #777;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 15px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.theme-toggle:hover {
+  background-color: #eee;
+}
+
+
+body.dark-mode {
+  background-color: #121212 !important; 
+  color: #e0e0e0 !important;             
+}
+
+/* Linki w treści */
+body.dark-mode a,
+body.dark-mode .post-link {
+  color: #82aaff !important;
+}
+
+body.dark-mode a:visited {
+  color: #c792ea !important;
+}
+
+body.dark-mode .site-header {
+  border-bottom: 1px solid #333;
+  background-color: #121212;
+}
+
+body.dark-mode .site-title, 
+body.dark-mode .site-title:visited {
+  color: #ffffff !important;
+}
+
+body.dark-mode .site-footer {
+  border-top: 1px solid #333;
+  background-color: #1e1e1e;
+}
+
+body.dark-mode code,
+body.dark-mode pre {
+  background-color: #2e2e2e !important;
+  color: #f8f8f2 !important;
+  border: 1px solid #444;
+}
+
+body.dark-mode table th,
+body.dark-mode table td {
+  border: 1px solid #444;
+}
+
+body.dark-mode .theme-toggle {
+  border-color: #888;
+  color: #fff;
+}
+body.dark-mode .theme-toggle:hover {
+  background-color: #333;
+}
