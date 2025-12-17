@@ -1,0 +1,35 @@
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+    <nav class="site-nav">
+      
+      <div class="trigger">
+        <button id="theme-toggle" class="theme-toggle" title="Przełącz tryb">🌙</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const toggleButton = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    toggleButton.innerText = '☀️';
+  }
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    
+    if (body.classList.contains('dark-mode')) {
+      localStorage.setItem('theme', 'dark');
+      toggleButton.innerText = '☀️';
+    } else {
+      localStorage.setItem('theme', 'light');
+      toggleButton.innerText = '🌙';
+    }
+  });
+</script>
