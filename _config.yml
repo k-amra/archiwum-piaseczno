@@ -1,0 +1,5 @@
+title: "Codzienne Streszczenia"
+description: "Dziennik newsów"
+theme: minima
+plugins:
+  - jekyll-feed
