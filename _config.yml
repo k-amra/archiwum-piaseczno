@@ -1,5 +1,4 @@
-title: "Codzienne Streszczenia"
-description: "Dziennik newsów"
+title: "Archiwum Piaseczno"
 theme: minima
 plugins:
   - jekyll-feed
